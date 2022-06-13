@@ -13,7 +13,7 @@
         </nav> -->
       </div>
       <div class="right">
-        <button class="buy solid">Kaufen</button> 
+        <button class="button solid">Kaufen</button> 
         <!-- <img class="bars" src="../assets/bars.svg" alt=""> -->
       </div>
     </div>
@@ -31,14 +31,17 @@ export default {
 // Header Styles
 header {
   background: rgb(247, 243, 240) none repeat scroll 0% 0%;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
   .content-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 56px;
+    height: var(--header-height);
   }
   img {
-    width: 56px;
+    width: var(--header-height);
   }
   .bars {
     border: none;

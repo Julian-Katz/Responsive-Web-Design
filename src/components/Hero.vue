@@ -2,8 +2,8 @@
   <section class="hero-image">
     <div class="content-container">
       <h1>unu: Ellipsoid</h1>
-      <h4>Kantenlos deine Stadt entdecken!</h4>
-      <button class="white">Kaufen</button>
+      <h3>Kantenlos deine Stadt entdecken!</h3>
+      <button class="button white">Kaufen</button>
     </div>
   </section>
 </template>
@@ -16,12 +16,18 @@ export default {
 
 <style lang="scss" scoped>
 .hero-image {
-  width: 100vw;
-  height: calc(100vh - 56px);
+  width: 100%;
+  height: calc(100vh - var(--header-height));
   background: url('../assets/hero_image_mobile.jpg');
   background-position: center;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  @media only screen and (min-width: 600px) {
+    background: url('../assets/hero_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .content-container {
   color: white;
