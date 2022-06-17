@@ -30,8 +30,9 @@ export default {
 <style lang="scss" scoped>
 // Header Styles
 header {
-  background: rgb(247, 243, 240) none repeat scroll 0% 0%;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 100;
   .content-container {

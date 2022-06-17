@@ -22,6 +22,7 @@
     <Scroller v-if="over900Px()"></Scroller>
     <Slider v-if="!over900Px()"></Slider>
     <DetailsTable></DetailsTable>
+    <Cta></Cta>
     <TextSlider></TextSlider>
     <Footer></Footer>
   </div>
@@ -37,6 +38,7 @@ import DetailsTable from './components/DetailsTable.vue';
 import TextSlider from './components/TextSlider.vue';
 import Footer from './components/Footer.vue';
 import Scroller from './components/Scroller.vue';
+import Cta from './components/Cta.vue';
 
 export default {
   name: 'App',
@@ -48,7 +50,8 @@ export default {
     DetailsTable,
     TextSlider,
     Footer,
-    Scroller
+    Scroller,
+    Cta
 },
     data() {
     return {
@@ -122,6 +125,8 @@ h4 {
 p {
   max-width: 600px;
 }
+label,
+input,
 p.big {
     font-size: 1.75rem;
 }
@@ -145,6 +150,8 @@ p.big {
     font-size: 1.4rem;
     margin-bottom: 0.6rem;
   }
+  label,
+  input,
   p.big {
     font-size: 2.5rem;
   }           
@@ -171,9 +178,14 @@ img {
   font-weight: 500;
   font-size: 1rem;
   max-width: 385px;
+  cursor: pointer;
   @media only screen and (min-width: 900px) {
     height: 48px;
     font-size: 1.375rem;
+  }
+  &.black {
+    color: #000000;
+    border: 2px solid #000000;
   }
   &.white {
     color: white;
@@ -214,7 +226,6 @@ img {
     max-width: 250px;
   }
 }
-
 .slider-head {
   margin-top: 6rem;
   @media only screen and (min-width: 900px) {

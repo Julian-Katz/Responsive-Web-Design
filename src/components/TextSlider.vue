@@ -5,11 +5,11 @@
     </div>
     <agile
       ref="slider"
-      :infinite="false"
+      :infinite="true"
       :navButtons="false"
       :dots="false"
       :autoplay="true"
-      :autoplaySpeed="5000"
+      :autoplaySpeed="3000"
       :pauseOnHover="false"
     >
       <div class="slide">
@@ -82,10 +82,13 @@ import { VueAgile } from 'vue-agile'
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
     button {
       width: calc(50% - 1rem);
       background: none;
       border: none;
+      cursor: pointer;
     }
   }
 }

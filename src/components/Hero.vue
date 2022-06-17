@@ -1,5 +1,6 @@
 <template>
   <section class="hero-image">
+    <video src="@/assets/Hero_video_cut.mp4" autoplay muted loop></video>
     <div class="content-container">
       <h1>unu: Ellipsoid</h1>
       <h3>Kantenlos deine Stadt entdecken!</h3>
@@ -18,15 +19,16 @@ export default {
 .hero-image {
   width: 100%;
   height: calc(100vh - var(--header-height));
-  background: url('../assets/hero_image_mobile.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  @media only screen and (min-width: 600px) {
-    background: url('../assets/hero_image.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--header-height);
+  video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    z-index: -5;
   }
 }
 .content-container {

@@ -10,17 +10,18 @@
         <p>Keine Kanten, nichts was dich aufhält. Ein Erlebnis ohne Nachteile, nichts stoppt dich. </p>
       </div>
     </div>
-    <div class="img-container" ref="img1">
-      <img class="img1" src="@/assets/scroll_image.png" alt="">
+    <div class="img-container " ref="img1">
+      <img class="img1" src="@/assets/UNU_NIGHT.jpg" alt="">
     </div>
-    <div class="img-container" ref="img2">
-      <img class="img2" src="@/assets/hero_image.jpg" alt="">
+    <div class="img-container second" ref="img2">
+      <img class="img2" src="@/assets/UNU_DAY.jpg" alt="">
     </div>
     <div class="background" ref="background"></div>
   </section>
 </template>
 
 <script>
+  /* eslint-disable no-unused-vars */
 export default {
   name: 'Scroller',
   setup() {
@@ -48,6 +49,7 @@ export default {
           console.log('case start up');
           this.$refs.img1.classList.remove("img-fixed")
           this.$refs.img2.classList.remove("img-fixed")
+          this.$refs.img2.firstChild.style = `clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);`;
         }
 
         if (!entry.isIntersecting && entry.boundingClientRect.y < 0) {
@@ -56,6 +58,7 @@ export default {
           this.$refs.img2.classList.remove("img-fixed")
           this.$refs.img1.classList.add("img-absolute-end")
           this.$refs.img2.classList.add("img-absolute-end")
+          this.$refs.img2.firstChild.style = `clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);`;
         }
         if(entry.isIntersecting && entry.boundingClientRect.y < 0) {
           console.log('case end up');
@@ -64,11 +67,12 @@ export default {
           this.$refs.img1.classList.remove("img-absolute-end")
           this.$refs.img2.classList.remove("img-absolute-end")
           document.addEventListener('scroll', () => {
-            console.log(this.$refs.text2.scrollTop);
-            // let distance = this.$refs.text1.getBoundingClientRect().top - this.$refs.text2.getBoundingClientRect().top;
-            
-            let height = this.$refs.img2.getBoundingClientRect().height;
-            this.$refs.img2.firstChild.style = `height: ${height}px`;
+              let distance = this.$refs.text1.getBoundingClientRect().top - this.$refs.text2.getBoundingClientRect().top;
+            if (this.$refs.background.getBoundingClientRect().top < 0 && this.$refs.background.getBoundingClientRect().top > distance) {
+              let scrollPercentage = this.$refs.background.getBoundingClientRect().top / distance * 100;
+              scrollPercentage = scrollPercentage.toFixed(2);
+              this.$refs.img2.firstChild.style = `clip-path: polygon(0 ${scrollPercentage}%, 100% ${scrollPercentage}%, 100% 100%, 0% 100%);`;
+            }
           })
         }
       })
@@ -91,7 +95,8 @@ section {
   height: 200vh;
   position: relative;
   // padding: 6rem 0;
-  margin: 6rem 0;
+  // margin: 6rem 0;
+  margin-top: 6rem;
   .content-container {
     position: relative;
     display: flex;
@@ -125,7 +130,7 @@ section {
       object-position: bottom;
     }
     // .img2 {
-    //   height: 50px;
+    //   clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
     // }
   
 
@@ -140,7 +145,7 @@ section {
     right: 0;
     width: 50vw;
     height: 100%;
-    background: red;
+    background: #C53C2E;
     z-index: -5;
   }
 }
