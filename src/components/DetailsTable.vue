@@ -6,39 +6,33 @@
         <!-- <div class="row"> -->
           <div class="item">
             <h3>Batterie</h3>
-            <p>8-12 Wochen (je nach Nutzung)</p>
+            <p>8-12 Wochen (je nach Nutzung) oder maximal 120km</p>
           </div>
           <div class="item">
             <h3>Stauraum</h3>
-            <p>Bruttostauraum: 45 l</p>
-            <p>2 Batterien + 33 l.</p>
-            <p>42 x 32 x 35 cm</p>
+            <p>Bruttostauraum: 300 l</p>
+            <p>z. B. 4 große Koffer</p>
+            <p>oder ein Fahrrad</p>
           </div>
           <div class="item">
             <h3>Passagiere</h3>
             <p>Gemacht für dich und deine Freunde.</p>
-            <p>2 Batterien + 33 l.</p>
-            <p>42 x 32 x 35 cm</p>
+            <p>Je nach Gepäck können 1-3 Freunde mitfahren.</p>
           </div>
         <!-- </div> -->
         <!-- <div class="row"> -->
           <div class="item">
             <h3>Geschwindigkeit</h3>
             <p>45 km/h</p>
+            <p>Erreichst du in 3 Sekunden.</p>
           </div>
           <div class="item">
-            <h3>Akku</h3>
-            <p>1.78 kWh Lithium Ion (LG)</p>
-            <p>Tragbar, 10,5 kg</p>
-            <p>Haltbarkeit 7-10 Jahre / 1.000</p>
-            <p>Ladezyklen</p>
-            <p>Gehäuse: schwarz, gebürstetes Aluminim</p>
+            <h3>Unser Versprechen</h3>
+            <p>Wenn du Unzufrieden bist kannst du den UNU innerhalb von 4 Wochen einfach zurück geben. </p>
           </div>
           <div class="item">
-            <h3>Aufladen</h3>
-            <p>220V Ladegerät</p>
-            <p>Passiv gekühlt (lautlos)</p>
-            <p>Ladezeit maximal 7 Std</p>
+            <h3>Garantie</h3>
+            <p>Du erhältst 2 Jahre Garantie, wir übernehmen alle Reparaturkosten. (ausgenommen sind Verschleißteile)</p>
           </div>
         <!-- </div> -->
       </div>

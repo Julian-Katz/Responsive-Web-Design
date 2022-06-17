@@ -2,12 +2,12 @@
   <section ref="section">
     <div class="content-container">
       <div ref="text1" class="text-item">
-        <h3>Atemberaubende Beschleunigung</h3>
-        <p>Im null Komma nichts erreichst du deine Geschwindigkeit. Nie mehr  warten auf das was kommt.</p>
+        <h3>Atemraubendes Fahrerlebnis</h3>
+        <p>Im null Komma nichts erreichst du deine Geschwindigkeit. So bist du immer besonders schnell am Ziel und nichts kann dich aufhalten.</p>
       </div>
       <div ref="text2" class="text-item">
-        <h3>Völlig Kantenloses Erlebnis</h3>
-        <p>Keine Kanten, nichts was dich aufhält. Ein Erlebnis ohne Nachteile, nichts stoppt dich. </p>
+        <h3>Bei Tag und Nacht</h3>
+        <p>Egal zu welcher Tageszeit oder bei welchem Wetter, du bist immer komfortabel und sicher unterwegs. So holst du dir dein außergewöhnliches Stadt Erlebnis zurück.</p>
       </div>
     </div>
     <div class="img-container " ref="img1">
@@ -106,7 +106,7 @@ section {
   }
   .img-container {
     width: 35vw;
-    max-width: 600px;
+    max-width: 580px;
     aspect-ratio: 16 / 9;
     position: absolute;
     top: 25%;

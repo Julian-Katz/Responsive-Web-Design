@@ -10,16 +10,16 @@
     >
       <div class="slide">
         <img src="@/assets/UNU_DAY_mobile.jpg" alt="">
-        <h3>Atemberaubende Beschleunigung</h3>
+        <h3>Atemraubendes Fahrerlebnis</h3>
         <p>
-          Im null Komma nichts erreichst du deine Geschwindigkeit. Nie mehr  warten auf das was kommt.
+          Im null Komma nichts erreichst du deine Geschwindigkeit. So bist du immer besonders schnell am Ziel und nichts kann dich aufhalten.
         </p>
       </div>
       <div class="slide">
         <img src="@/assets/UNU_NIGHT_mobile.jpg" alt="">
-        <h3>Völlig Kantenloses Erlebnis</h3>
+        <h3>Bei Tag und Nacht</h3>
         <p>
-          Keine Kanten, nichts was dich aufhält. Ein Erlebnis ohne Nachteile, nichts stoppt dich.
+          Egal zu welcher Tageszeit oder bei welchem Wetter, du bist immer komfortabel und sicher unterwegs. So holst du dir dein außergewöhnliches Stadt Erlebnis zurück.
         </p>
       </div>
     </agile>
