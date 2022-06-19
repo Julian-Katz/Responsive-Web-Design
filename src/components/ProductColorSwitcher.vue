@@ -31,7 +31,7 @@ export default {
   name: 'ProductColorSwitcher',
   data() {
     return {
-      showImage: 'black',
+      showImage: 'red',
     }
   },
 }
