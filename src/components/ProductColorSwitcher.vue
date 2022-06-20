@@ -77,11 +77,13 @@ section {
         bottom: -35%;
         left: -5%;
         transform: scale(200%);
+        z-index: 0;
       }
 
       img {
         position: absolute;
         width: 100%;
+        z-index: 5;
       }
     }
     .pagination {
