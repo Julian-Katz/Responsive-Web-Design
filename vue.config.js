@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-      ? '/responsive-web-design/'
+      ? '/Responsive-Web-Design/'
       : '/'
   }
